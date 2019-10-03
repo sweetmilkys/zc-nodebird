@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "make nodebird SNS",
   "author": "",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -19,12 +19,15 @@
   },
   "homepage": "https://github.com/sweetmilkys/zc-nodebird#readme",
   "dependencies": {
+    "@types/node": "^12.7.9",
+    "@types/react": "^16.9.4",
+    "@types/react-dom": "^16.9.1",
     "antd": "^3.23.5",
     "dotenv": "^8.1.0",
     "next": "^9.0.7",
-    "prop-types": "^15.7.2",
     "react": "^16.10.1",
-    "react-dom": "^16.10.1"
+    "react-dom": "^16.10.1",
+    "typescript": "^3.6.3"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

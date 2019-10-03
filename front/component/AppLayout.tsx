@@ -1,9 +1,13 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
 import { Menu, Input, Button } from "antd";
 
-const AppLayout = ({ children }) => {
+interface AppLayoutProps {
+  children: ReactNode;
+}
+
+const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   return (
     <div>
       <Menu mode="horizontal">
@@ -24,10 +28,6 @@ const AppLayout = ({ children }) => {
       {children}
     </div>
   );
-};
-
-AppLayout.propTypes = {
-  children: PropTypes.node
 };
 
 export default AppLayout;

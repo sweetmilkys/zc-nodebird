@@ -18,8 +18,8 @@
 - [x] [#1-1 프로젝트 구조와 배우는 것들](https://github.com/sweetmilkys/zc-nodebird/commit/4e0080120b7e550a868cc6955d5094781c43340c)
 - [x] [#1-2 next와 eslint 설치하기](https://github.com/sweetmilkys/zc-nodebird/commit/c1d2fcbe2164af9599aea8f7b9fd254f91a7da44)
 - [x] [#1-3 next 라우팅 시스템](https://github.com/sweetmilkys/zc-nodebird/commit/3d5213e3f2528f8ddbe7506dbe5bb4b62836d3ab)
-- [x] [#1-4 ant design 적용하기]
-- [ ] [#1-5 기본 페이지들 만들기]
+- [x] [#1-4 ant design 적용하기](https://github.com/sweetmilkys/zc-nodebird/commit/fe5f828ed935cee9a144192d2722a43171a6456e)
+- [ ] [#1-5 기본 페이지들 만들기]()
 - [ ] [#1-6 회원가입 폼 만들기]
 - [ ] [#1-7 회원가입 state와 custom hook]
 - [ ] [#2-1 _app.js로 레이아웃 분리하기]

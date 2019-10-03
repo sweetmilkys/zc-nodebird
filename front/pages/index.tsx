@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import AppLayout from "../component/AppLayout";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <>
       <Head>
@@ -14,7 +14,6 @@ const Home = () => {
         />
       </Head>
       <AppLayout>
-        <Link href="/about">about</Link>
         <div>Hello, Next!</div>
       </AppLayout>
     </>
