@@ -1,8 +1,10 @@
 {
-  "parserOpions": 2019,
-  "sourceType": "script",
-  "ecmaFeatures": {
-    "jsx": true
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "env": {
     "browser": true,

@@ -16,8 +16,8 @@
 ## Curriculum
 
 - [x] [#1-1 프로젝트 구조와 배우는 것들](https://github.com/sweetmilkys/zc-nodebird/commit/4e0080120b7e550a868cc6955d5094781c43340c)
-- [x] [#1-2 next와 eslint 설치하기]
-- [ ] [#1-3 next 라우팅 시스템]
+- [x] [#1-2 next와 eslint 설치하기](https://github.com/sweetmilkys/zc-nodebird/commit/c1d2fcbe2164af9599aea8f7b9fd254f91a7da44)
+- [x] [#1-3 next 라우팅 시스템]
 - [ ] [#1-4 ant design 적용하기]
 - [ ] [#1-5 기본 페이지들 만들기]
 - [ ] [#1-6 회원가입 폼 만들기]
@@ -245,3 +245,15 @@ js파일이 변경될때마다 이를 감지하고 서버를 재부팅
 ##### 15. eslint
 
 협업할 경우 코딩 스타일이 다르기 때문에 사용 권장하며 개발 시에만 확인 하면 되므로 설치시 -D를 붙여 devDependencies로 세팅
+
+##### 16. next 라우팅
+
+next에서는 자체 라우터가 있어서 리액트 라우터를 사용하지 않음. pages폴더 자체가 주소체계를 표현해줌으로 react router처럼 따로 컴포넌트를 만들지 않아도 됨  
+/about 페이지를 만들고 싶으면 pages폴더안에 about.js 파일만 생성하면 됨  
+기본적으로 코드스플리팅이 적용된 주소 시스템
+
+##### 17. NPM vs NPX
+
+NPM - 자바스크립트 패키지 관리 모듈
+NPX: 로컬로 설치된 도구들을 npm run scripts 없이 사용할 수 있음  
+([npm] 🤔npx란 무엇인가?)[https://geonlee.tistory.com/32]
