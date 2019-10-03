@@ -15,7 +15,7 @@
 
 ## Curriculum
 
-- [ ] [#1-1 프로젝트 구조와 배우는 것들]
+- [x] [#1-1 프로젝트 구조와 배우는 것들]
 - [ ] [#1-2 next와 eslint 설치하기]
 - [ ] [#1-3 next 라우팅 시스템]
 - [ ] [#1-4 ant design 적용하기]
@@ -150,4 +150,71 @@
 
 ## Reference
 
+</br>
+
 ## Note
+
+#### 프론트서버
+
+- React, Next
+- Redux
+- Redux-saga
+- Styled Components
+
+#### 백엔드서버
+
+- Express
+- DB(MySQL)
+- ORM(시퀄라이즈)
+- passport
+- multer (S3)
+- Socket.IO
+
+##### 1. 프론트/백엔드 분리하는 이유가 무엇인가?
+
+장점:스케일링(각 서버의 처리 능력을 향상시키는 수직적 확장과 서비스를 파티션이나 샤드 단위로 분할하는 수평적 확장) 이슈
+단점: 복잡도 증가 및 CORS등 이슈
+분리되어 있으면 둘 중 하나의 요청이 많을 경우 요청이 없는 쪽의 자원낭비를 막을 수 있음  
+[서버스케일링](http://jasonim.me/dev/295)
+
+##### 2. 프론트서버의 역할은 무엇인가?
+
+프론트화면에 필요한 html, css, js파일을 전달하고 서버로부터 데이터를 받아 화면을 그려줌. 화면을 그려주는 요청이 많을 경우 프론트서버를 여러대 늘려줌
+
+##### 3. 백엔드서버의 역할은 무엇인가?
+
+프론트엔드에서 발생한 데이터를 DB에 저장하고 처리. 데이터 처리 요청이 많을 경우 백엔드서버를 여러대 늘려줌
+
+##### 4. Next.js
+
+Universal 리액트 어플리케이션의 서버렌더링을 쉽게 구현 할 수 있게 도와주는 간단한 프레임워크
+
+##### 5. Next 사용이유
+
+사이트 검색이 잘 되도록하기 위해. SPA는 검색엔진에 검색이 잘 되지 않음. react가 화면을 렌더링 할때 검색 봇이 볼 수 있도록 컨텐츠를 같이 넣어서 렌더링해주는 서버사이드렌더링을 쉽게해줌  
+[react-router :: 3장. 서버사이드 렌더링](https://velopert.com/3425)
+
+##### 6. SPA
+
+Single Page Application (싱글 페이지 어플리케이션) 의 약자입니다. 말 그대로, 페이지가 1개인 어플리케이션이란 뜻으로 client-side-rendering을 사용
+싱글페이지 어플리케이션의 단점은 자바스크립트 번들 파일에 어플리케이션에 대한 모든 로직을 불러와서, 규모가 커지면 용량이 커지기 때문에, 로딩속도가 지연 될 수 있어 필요에 따라 번들 파일을 여러개의 파일로 분리시키는 코드 스플리팅이 필요
+서버사이드렌더링에서 코드스플리팅이 아직 개발되지 않음  
+[react-router :: 1장. 리액트 라우터 사용해보기](https://velopert.com/3417)
+
+##### 7. client-side-rendering
+
+클라이언트측에서 View를 생성하는 방법 view를 브라우저에서 렌더링하여 보여줘 로딩시간이 길지만 로딩이 끝난 후 바로 인터렉션에 반응함
+
+##### 8. server-side-rendering
+
+서버측에서 HTML&View를 생성하여 응답하는 방법 view를 서버에서 렌더링하여 가져오므로 첫로딩이 매우 짧으나 JS파일이 컴파일 될때 까지 인터렉션에 반응하지 않음  
+[Client-side rendering vs. server-side rendering](https://medium.com/@adamzerner/client-side-rendering-vs-server-side-rendering-a32d2cf3bfcc)
+
+##### 9. 코드스플리팅(Code Splitting)
+
+필요에 따라 번들파일을 여러개로 분리 한개의 파일에서 처음부터 모두 불러오는 것이 아닌 라이브러리나 컴포넌트가 실제로 필요해질 때 불러옴  
+[react-router :: 2장. 코드 스플리팅 (Code Splitting)](https://velopert.com/3421)
+
+##### 10. socket.IO
+
+브라우저와 서버간 실시간 양방향 통신이 가능
