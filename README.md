@@ -15,8 +15,8 @@
 
 ## Curriculum
 
-- [x] [#1-1 프로젝트 구조와 배우는 것들]
-- [ ] [#1-2 next와 eslint 설치하기]
+- [x] [#1-1 프로젝트 구조와 배우는 것들](https://github.com/sweetmilkys/zc-nodebird/commit/4e0080120b7e550a868cc6955d5094781c43340c)
+- [x] [#1-2 next와 eslint 설치하기]
 - [ ] [#1-3 next 라우팅 시스템]
 - [ ] [#1-4 ant design 적용하기]
 - [ ] [#1-5 기본 페이지들 만들기]
@@ -146,6 +146,13 @@
 
 ## Libray
 
+- react
+- react-dom
+- next
+- nodemon
+- webpack
+- eslint(import, react-hooks)
+
 </br>
 
 ## Reference
@@ -218,3 +225,23 @@ Single Page Application (싱글 페이지 어플리케이션) 의 약자입니�
 ##### 10. socket.IO
 
 브라우저와 서버간 실시간 양방향 통신이 가능
+
+##### 11. npm init
+
+npm init은 node 프로그램을 시작(initialize)하는 명령어로 package.json(해당 node 프로그램에 대한 기본 정보를 담고 있는 파일) 파일을 생성
+
+##### 12. next
+
+react 위에서 돌아가는 프레임워크, 코드스플리팅과 서버사이드렌더링을 위해
+
+##### 13. nodemon
+
+js파일이 변경될때마다 이를 감지하고 서버를 재부팅
+
+##### 14. webpack
+
+의존 관계에 있는 모듈들을 하나의 자바스크립트 파일로 번들링하는 모듈 번들러
+
+##### 15. eslint
+
+협업할 경우 코딩 스타일이 다르기 때문에 사용 권장하며 개발 시에만 확인 하면 되므로 설치시 -D를 붙여 devDependencies로 세팅

@@ -1,0 +1,32 @@
+{
+  "name": "zc-nodebird",
+  "version": "1.0.0",
+  "description": "make nodebird SNS",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sweetmilkys/zc-nodebird.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sweetmilkys/zc-nodebird/issues"
+  },
+  "homepage": "https://github.com/sweetmilkys/zc-nodebird#readme",
+  "dependencies": {
+    "next": "^9.0.7",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.15.1",
+    "eslint-plugin-react-hooks": "^2.1.1",
+    "nodemon": "^1.19.3",
+    "webpack": "^4.41.0"
+  }
+}
