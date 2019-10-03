@@ -17,8 +17,8 @@
 
 - [x] [#1-1 프로젝트 구조와 배우는 것들](https://github.com/sweetmilkys/zc-nodebird/commit/4e0080120b7e550a868cc6955d5094781c43340c)
 - [x] [#1-2 next와 eslint 설치하기](https://github.com/sweetmilkys/zc-nodebird/commit/c1d2fcbe2164af9599aea8f7b9fd254f91a7da44)
-- [x] [#1-3 next 라우팅 시스템]
-- [ ] [#1-4 ant design 적용하기]
+- [x] [#1-3 next 라우팅 시스템](https://github.com/sweetmilkys/zc-nodebird/commit/3d5213e3f2528f8ddbe7506dbe5bb4b62836d3ab)
+- [x] [#1-4 ant design 적용하기]
 - [ ] [#1-5 기본 페이지들 만들기]
 - [ ] [#1-6 회원가입 폼 만들기]
 - [ ] [#1-7 회원가입 state와 custom hook]
@@ -151,7 +151,9 @@
 - next
 - nodemon
 - webpack
-- eslint(import, react-hooks)
+- eslint(babel-eslint, eslint-plugin-import, eslint-plugin-react eslint-plugin-react-hooks)
+- prop-types
+- antd
 
 </br>
 
@@ -254,6 +256,6 @@ next에서는 자체 라우터가 있어서 리액트 라우터를 사용하지 
 
 ##### 17. NPM vs NPX
 
-NPM - 자바스크립트 패키지 관리 모듈
+NPM: 자바스크립트 패키지 관리 모듈
 NPX: 로컬로 설치된 도구들을 npm run scripts 없이 사용할 수 있음  
 ([npm] 🤔npx란 무엇인가?)[https://geonlee.tistory.com/32]
