@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import PropTypes from "prop-types";
 import Link from "next/link";
 import { Menu, Input, Button } from "antd";
 
@@ -25,6 +24,11 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
           <Input.Search enterButton style={{ verticalAlign: "middle" }} />
         </Menu.Item>
       </Menu>
+      <Link href="/signup">
+        <a>
+          <Button>회원가입</Button>
+        </a>
+      </Link>
       {children}
     </div>
   );

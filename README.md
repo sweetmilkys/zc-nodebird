@@ -21,8 +21,8 @@
 - [x] [#1-4 ant design 적용하기](https://github.com/sweetmilkys/zc-nodebird/commit/fe5f828ed935cee9a144192d2722a43171a6456e)
 - [x] #1-5 기본 페이지들 만들기
 - [x] [#1-6 회원가입 폼 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/d92d25fb8a22da8613cad64f8f42adb15026941d)
-- [x] [#1-7 회원가입 state와 custom hook]
-- [ ] [#2-1 _app.js로 레이아웃 분리하기]
+- [x] [#1-7 회원가입 state와 custom hook](https://github.com/sweetmilkys/zc-nodebird/commit/a4901f3b59021d182dbbf362af2e4bd291b8f25c)
+- [x] [#2-1 \_app.js로 레이아웃 분리하기]
 - [ ] [#2-2 prop-types]
 - [ ] [#2-3 antd 그리드 시스템]
 - [ ] [#2-4 커스텀 훅 재사용하기]
@@ -258,4 +258,22 @@ next에서는 자체 라우터가 있어서 리액트 라우터를 사용하지 
 
 NPM: 자바스크립트 패키지 관리 모듈
 NPX: 로컬로 설치된 도구들을 npm run scripts 없이 사용할 수 있음  
-(npm 🤔npx란 무엇인가?)[https://geonlee.tistory.com/32]
+[npm 🤔npx란 무엇인가?](https://geonlee.tistory.com/32)
+
+#### 18. useCallback으로 이벤트리스너 감싸주기
+
+props로 전달하는 메소드들을 감싸줘야한다. state가 바뀌면 전체가 재 실행되어 함수들도 새로 생성된다. 새로 생성이 되면 이전과 다른 객체이기 때문에 전달받은 컴포넌트들도 다시 렌더링을 하게 된다. 의도치 않은 리렌더링을 방지하기 위해 사용
+
+#### 19. 함수 내부에서 사용하는 state를 deps 배열에 넣어주기
+
+dependency에 state를 넣어줘야 이벤트 리스너들이 재 생성이 된다.
+
+#### 20. 최적화 작업을 위한 컴포넌트 분리
+
+함수 컴포넌트 특성으로 인하여 hook를 사용하면 최적화 작업이 필요하다. 최대한 컴포넌트를 잘게 쪼개야한다.
+(그래야 해당 컴포넌트만 전체 리렌더링 되기 때문이다.)
+
+#### 21. \_app.js
+
+`./pages/_app.js file`을 만들면 App class를 overding 할 수 있다.  
+[custom app](https://nextjs.org/docs#custom-app)

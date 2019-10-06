@@ -19,23 +19,23 @@
   },
   "homepage": "https://github.com/sweetmilkys/zc-nodebird#readme",
   "dependencies": {
-    "@types/node": "^12.7.9",
-    "@types/react": "^16.9.4",
-    "@types/react-dom": "^16.9.1",
     "antd": "^3.23.5",
     "dotenv": "^8.1.0",
     "next": "^9.0.7",
     "react": "^16.10.1",
-    "react-dom": "^16.10.1",
-    "typescript": "^3.6.3"
+    "react-dom": "^16.10.1"
   },
   "devDependencies": {
+    "@types/node": "^12.7.11",
+    "@types/react": "^16.9.5",
+    "@types/react-dom": "^16.9.1",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.5.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-react": "^7.15.1",
     "eslint-plugin-react-hooks": "^2.1.1",
     "nodemon": "^1.19.3",
+    "typescript": "^3.6.3",
     "webpack": "^4.41.0"
   }
 }
