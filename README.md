@@ -20,8 +20,8 @@
 - [x] [#1-3 next 라우팅 시스템](https://github.com/sweetmilkys/zc-nodebird/commit/3d5213e3f2528f8ddbe7506dbe5bb4b62836d3ab)
 - [x] [#1-4 ant design 적용하기](https://github.com/sweetmilkys/zc-nodebird/commit/fe5f828ed935cee9a144192d2722a43171a6456e)
 - [x] #1-5 기본 페이지들 만들기
-- [x] [#1-6 회원가입 폼 만들기]()
-- [ ] [#1-7 회원가입 state와 custom hook]
+- [x] [#1-6 회원가입 폼 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/d92d25fb8a22da8613cad64f8f42adb15026941d)
+- [x] [#1-7 회원가입 state와 custom hook]
 - [ ] [#2-1 _app.js로 레이아웃 분리하기]
 - [ ] [#2-2 prop-types]
 - [ ] [#2-3 antd 그리드 시스템]
@@ -179,83 +179,83 @@
 - multer (S3)
 - Socket.IO
 
-##### 1. 프론트/백엔드 분리하는 이유가 무엇인가?
+#### 1. 프론트/백엔드 분리하는 이유가 무엇인가?
 
 장점:스케일링(각 서버의 처리 능력을 향상시키는 수직적 확장과 서비스를 파티션이나 샤드 단위로 분할하는 수평적 확장) 이슈
 단점: 복잡도 증가 및 CORS등 이슈
 분리되어 있으면 둘 중 하나의 요청이 많을 경우 요청이 없는 쪽의 자원낭비를 막을 수 있음  
 [서버스케일링](http://jasonim.me/dev/295)
 
-##### 2. 프론트서버의 역할은 무엇인가?
+#### 2. 프론트서버의 역할은 무엇인가?
 
 프론트화면에 필요한 html, css, js파일을 전달하고 서버로부터 데이터를 받아 화면을 그려줌. 화면을 그려주는 요청이 많을 경우 프론트서버를 여러대 늘려줌
 
-##### 3. 백엔드서버의 역할은 무엇인가?
+#### 3. 백엔드서버의 역할은 무엇인가?
 
 프론트엔드에서 발생한 데이터를 DB에 저장하고 처리. 데이터 처리 요청이 많을 경우 백엔드서버를 여러대 늘려줌
 
-##### 4. Next.js
+#### 4. Next.js
 
 Universal 리액트 어플리케이션의 서버렌더링을 쉽게 구현 할 수 있게 도와주는 간단한 프레임워크
 
-##### 5. Next 사용이유
+#### 5. Next 사용이유
 
 사이트 검색이 잘 되도록하기 위해. SPA는 검색엔진에 검색이 잘 되지 않음. react가 화면을 렌더링 할때 검색 봇이 볼 수 있도록 컨텐츠를 같이 넣어서 렌더링해주는 서버사이드렌더링을 쉽게해줌  
 [react-router :: 3장. 서버사이드 렌더링](https://velopert.com/3425)
 
-##### 6. SPA
+#### 6. SPA
 
 Single Page Application (싱글 페이지 어플리케이션) 의 약자입니다. 말 그대로, 페이지가 1개인 어플리케이션이란 뜻으로 client-side-rendering을 사용
 싱글페이지 어플리케이션의 단점은 자바스크립트 번들 파일에 어플리케이션에 대한 모든 로직을 불러와서, 규모가 커지면 용량이 커지기 때문에, 로딩속도가 지연 될 수 있어 필요에 따라 번들 파일을 여러개의 파일로 분리시키는 코드 스플리팅이 필요
 서버사이드렌더링에서 코드스플리팅이 아직 개발되지 않음  
 [react-router :: 1장. 리액트 라우터 사용해보기](https://velopert.com/3417)
 
-##### 7. client-side-rendering
+#### 7. client-side-rendering
 
 클라이언트측에서 View를 생성하는 방법 view를 브라우저에서 렌더링하여 보여줘 로딩시간이 길지만 로딩이 끝난 후 바로 인터렉션에 반응함
 
-##### 8. server-side-rendering
+#### 8. server-side-rendering
 
 서버측에서 HTML&View를 생성하여 응답하는 방법 view를 서버에서 렌더링하여 가져오므로 첫로딩이 매우 짧으나 JS파일이 컴파일 될때 까지 인터렉션에 반응하지 않음  
 [Client-side rendering vs. server-side rendering](https://medium.com/@adamzerner/client-side-rendering-vs-server-side-rendering-a32d2cf3bfcc)
 
-##### 9. 코드스플리팅(Code Splitting)
+#### 9. 코드스플리팅(Code Splitting)
 
 필요에 따라 번들파일을 여러개로 분리 한개의 파일에서 처음부터 모두 불러오는 것이 아닌 라이브러리나 컴포넌트가 실제로 필요해질 때 불러옴  
 [react-router :: 2장. 코드 스플리팅 (Code Splitting)](https://velopert.com/3421)
 
-##### 10. socket.IO
+#### 10. socket.IO
 
 브라우저와 서버간 실시간 양방향 통신이 가능
 
-##### 11. npm init
+#### 11. npm init
 
 npm init은 node 프로그램을 시작(initialize)하는 명령어로 package.json(해당 node 프로그램에 대한 기본 정보를 담고 있는 파일) 파일을 생성
 
-##### 12. next
+#### 12. next
 
 react 위에서 돌아가는 프레임워크, 코드스플리팅과 서버사이드렌더링을 위해
 
-##### 13. nodemon
+#### 13. nodemon
 
 js파일이 변경될때마다 이를 감지하고 서버를 재부팅
 
-##### 14. webpack
+#### 14. webpack
 
 의존 관계에 있는 모듈들을 하나의 자바스크립트 파일로 번들링하는 모듈 번들러
 
-##### 15. eslint
+#### 15. eslint
 
 협업할 경우 코딩 스타일이 다르기 때문에 사용 권장하며 개발 시에만 확인 하면 되므로 설치시 -D를 붙여 devDependencies로 세팅
 
-##### 16. next 라우팅
+#### 16. next 라우팅
 
 next에서는 자체 라우터가 있어서 리액트 라우터를 사용하지 않음. pages폴더 자체가 주소체계를 표현해줌으로 react router처럼 따로 컴포넌트를 만들지 않아도 됨  
 /about 페이지를 만들고 싶으면 pages폴더안에 about.js 파일만 생성하면 됨  
 기본적으로 코드스플리팅이 적용된 주소 시스템
 
-##### 17. NPM vs NPX
+#### 17. NPM vs NPX
 
 NPM: 자바스크립트 패키지 관리 모듈
 NPX: 로컬로 설치된 도구들을 npm run scripts 없이 사용할 수 있음  
-([npm] 🤔npx란 무엇인가?)[https://geonlee.tistory.com/32]
+(npm 🤔npx란 무엇인가?)[https://geonlee.tistory.com/32]
