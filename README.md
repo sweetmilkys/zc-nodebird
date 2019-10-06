@@ -22,8 +22,8 @@
 - [x] #1-5 기본 페이지들 만들기
 - [x] [#1-6 회원가입 폼 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/d92d25fb8a22da8613cad64f8f42adb15026941d)
 - [x] [#1-7 회원가입 state와 custom hook](https://github.com/sweetmilkys/zc-nodebird/commit/a4901f3b59021d182dbbf362af2e4bd291b8f25c)
-- [x] [#2-1 \_app.js로 레이아웃 분리하기]
-- [ ] [#2-2 prop-types]
+- [x] [#2-1 \_app.js로 레이아웃 분리하기](https://github.com/sweetmilkys/zc-nodebird/commit/4d1bbbb29583452f8539d21f8f2cde188e22879a)
+- [x] [#2-2 prop-types]
 - [ ] [#2-3 antd 그리드 시스템]
 - [ ] [#2-4 커스텀 훅 재사용하기]
 - [ ] [#2-5 메인 화면 만들기]
@@ -277,3 +277,20 @@ dependency에 state를 넣어줘야 이벤트 리스너들이 재 생성이 된�
 
 `./pages/_app.js file`을 만들면 App class를 overding 할 수 있다.  
 [custom app](https://nextjs.org/docs#custom-app)
+
+#### 22. prop-types
+
+타입확인 하기 위해 사용한다. type은 아래 링크를 참조하자
+[prop-types](https://www.npmjs.com/package/prop-types)
+
+#### 23. customising 가능한 페이지
+
+- Document: pages/\_document.js
+
+  <html>, <Head>, <body> 등 html에 대해서 수정
+
+- App: pages/\_app.js
+  page 핸들링
+
+- Error: pages/\_error.js
+  error 페이지 핸들링

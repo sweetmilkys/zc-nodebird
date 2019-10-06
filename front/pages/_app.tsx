@@ -3,7 +3,7 @@ import Head from "next/head";
 import AppLayout from "../components/AppLayout";
 
 interface INodeBird {
-  Component: React.FC;
+  Component: React.ElementType;
 }
 
 const NodeBird: React.FC<INodeBird> = ({ Component }) => {
