@@ -1,12 +1,16 @@
 import React, { ReactNode } from "react";
 import Link from "next/link";
-import { Menu, Input, Button, Row, Col, Card, Avatar } from "antd";
+import { Menu, Input, Row, Col, Card, Avatar } from "antd";
+
+import UserProfile from "./UserProfile";
+import LoginForm from "./LoginForm";
 
 const dummy = {
   nickName: "danah",
   post: [],
   followings: [],
-  followers: []
+  followers: [],
+  isLogindIn: false
 };
 
 interface AppLayoutProps {
@@ -33,41 +37,13 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
       </Menu>
       <Row>
         <Col xs={24} md={6}>
-          <Card
-            actions={[
-              <div key="twit">
-                짹짹
-                <br />
-                {dummy.post.length}
-              </div>,
-              <div key="flolwing">
-                짹짹
-                <br />
-                {dummy.followings.length}
-              </div>,
-              <div key="flolwer">
-                짹짹
-                <br />
-                {dummy.followers.length}
-              </div>
-            ]}
-          >
-            <Card.Meta
-              avatar={<Avatar>{dummy.nickName[0]}</Avatar>}
-              title={dummy.nickName}
-            ></Card.Meta>
-          </Card>
+          {dummy.isLogindIn ? <UserProfile /> : <LoginForm />}
         </Col>
         <Col xs={24} md={12}>
           {children}
         </Col>
         <Col xs={24} md={6}></Col>
       </Row>
-      <Link href="/signup">
-        <a>
-          <Button>회원가입</Button>
-        </a>
-      </Link>
     </>
   );
 };

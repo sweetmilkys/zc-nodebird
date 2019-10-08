@@ -2,36 +2,28 @@ import React, { useState, useCallback } from "react";
 import { Form, Input, Checkbox, Button } from "antd";
 import { CheckboxChangeEvent } from "antd/lib/checkbox";
 
+export const useInput = (defaultValue: any = null) => {
+  const [value, setValue] = useState(defaultValue);
+
+  const onChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value);
+  }, []);
+
+  return [value, onChange];
+};
+
 interface Ivalue {
   initValue?: string | null;
 }
 
 const Signup = () => {
-  const [id, setId] = useState("");
-  const [nickName, setNickName] = useState("");
-  const [password, setPassword] = useState("");
+  const [id, onChangeId] = useInput("");
+  const [nickName, onChangeNickName] = useInput("");
+  const [password, onChangePassword] = useInput("");
   const [term, setTerm] = useState(false);
   const [passwordCheck, setPasswordCheck] = useState("");
   const [passwordError, setPasswordError] = useState(false);
   const [termError, setTermError] = useState(false);
-
-  const onChangeId = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    setId(e.target.value);
-  }, []);
-
-  const onChangeNickName = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => {
-      setNickName(e.target.value);
-    },
-    []
-  );
-
-  const onChangePassword = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => {
-      setPassword(e.target.value);
-    },
-    []
-  );
 
   const onChangePasswordCheck = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
