@@ -2,15 +2,15 @@ import React, { ReactNode } from "react";
 import Link from "next/link";
 import { Menu, Input, Row, Col, Card, Avatar } from "antd";
 
-import UserProfile from "./UserProfile";
 import LoginForm from "./LoginForm";
+import UserProfile from "./UserProfile";
 
 const dummy = {
   nickName: "danah",
   post: [],
   followings: [],
   followers: [],
-  isLogindIn: false
+  isLoggedIn: false
 };
 
 interface AppLayoutProps {
@@ -37,12 +37,16 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
       </Menu>
       <Row>
         <Col xs={24} md={6}>
-          {dummy.isLogindIn ? <UserProfile /> : <LoginForm />}
+          {dummy.isLoggedIn ? <UserProfile /> : <LoginForm />}
         </Col>
         <Col xs={24} md={12}>
           {children}
         </Col>
-        <Col xs={24} md={6}></Col>
+        <Col xs={24} md={6}>
+          <Link href="/">
+            <a target="_blank">Made by danah</a>
+          </Link>
+        </Col>
       </Row>
     </>
   );
