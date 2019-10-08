@@ -25,8 +25,8 @@
 - [x] [#2-1 \_app.js로 레이아웃 분리하기](https://github.com/sweetmilkys/zc-nodebird/commit/4d1bbbb29583452f8539d21f8f2cde188e22879a)
 - [x] [#2-2 prop-types](https://github.com/sweetmilkys/zc-nodebird/commit/d80a03d45e77721365cc6790d9723b76b9ab9459)
 - [x] [#2-3 antd 그리드 시스템](https://github.com/sweetmilkys/zc-nodebird/commit/799cd794fc9eedf801f6d148b6bca7b9443fea33)
-- [x] [#2-4 커스텀 훅 재사용하기]()
-- [ ] [#2-5 메인 화면 만들기]
+- [x] [#2-4 커스텀 훅 재사용하기](https://github.com/sweetmilkys/zc-nodebird/commit/8424824964ac17d1827fc3b02fdc8402e3bbf6a1)
+- [x] [#2-5 메인 화면 만들기]
 - [ ] [#2-6 프로필 화면 만들기]
 - [ ] [#2-7 컴포넌트 분리하기]
 - [ ] [#3-1 redux 주요 개념 소개]
