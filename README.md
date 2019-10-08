@@ -23,8 +23,8 @@
 - [x] [#1-6 회원가입 폼 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/d92d25fb8a22da8613cad64f8f42adb15026941d)
 - [x] [#1-7 회원가입 state와 custom hook](https://github.com/sweetmilkys/zc-nodebird/commit/a4901f3b59021d182dbbf362af2e4bd291b8f25c)
 - [x] [#2-1 \_app.js로 레이아웃 분리하기](https://github.com/sweetmilkys/zc-nodebird/commit/4d1bbbb29583452f8539d21f8f2cde188e22879a)
-- [x] [#2-2 prop-types]
-- [ ] [#2-3 antd 그리드 시스템]
+- [x] [#2-2 prop-types](https://github.com/sweetmilkys/zc-nodebird/commit/d80a03d45e77721365cc6790d9723b76b9ab9459)
+- [x] [#2-3 antd 그리드 시스템]
 - [ ] [#2-4 커스텀 훅 재사용하기]
 - [ ] [#2-5 메인 화면 만들기]
 - [ ] [#2-6 프로필 화면 만들기]
@@ -146,13 +146,13 @@
 
 ## Libray
 
+- typescript
 - react
 - react-dom
 - next
 - nodemon
 - webpack
 - eslint(babel-eslint, eslint-plugin-import, eslint-plugin-react eslint-plugin-react-hooks)
-- prop-types
 - antd
 
 </br>
