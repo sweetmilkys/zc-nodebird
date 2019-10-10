@@ -28,8 +28,8 @@
 - [x] [#2-4 커스텀 훅 재사용하기](https://github.com/sweetmilkys/zc-nodebird/commit/8424824964ac17d1827fc3b02fdc8402e3bbf6a1)
 - [x] [#2-5 메인 화면 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/ada1694bc4633828515deed2b15479354b9cfb5b)
 - [x] [#2-6 프로필 화면 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/6b8cd715164f9840ba5d87397eebc6ee583e25e1)
-- [x] [#2-7 컴포넌트 분리하기]
-- [ ] [#3-1 redux 주요 개념 소개]
+- [x] [#2-7 컴포넌트 분리하기](https://github.com/sweetmilkys/zc-nodebird/commit/c9b53f21d5aa1b04bf205fd3b858adc86e6ef80d)
+- [x] [#3-1 redux 주요 개념 소개]
 - [ ] [#3-2 첫 리듀서 만들기]
 - [ ] [#3-3 불변성과 리듀서 여러 개 합치기]
 - [ ] [#3-4 redux react 연결하기]
@@ -294,3 +294,37 @@ dependency에 state를 넣어줘야 이벤트 리스너들이 재 생성이 된�
 
 - Error: pages/\_error.js
   error 페이지 핸들링
+
+#### 24. 리액트 상태관리
+
+상태 업데이트 로직의 분리, 더 쉬운 상태 관리를 위해 사용한다.
+
+- Redux
+- MobX
+- Context API
+
+#### 25. Redux
+
+- 컴포넌트들의 상태 관련 로직들을 다른 파일들로 분리시켜서 더욱 효율적으로 관리할 수 있다.
+- 컴포넌트끼리 상태를 공유하게 될 때 여러 컴포넌트를 거치지 않고도 손쉽게 상태 값을 전달한다.
+
+#### 26. Redux state와 React state
+
+React의 state를 바꾸는 작업이 까다로워 React의 state와 같이 사용한다.
+React의 사용이유 안정성과 state 통제가 용이 하기때문에 사용한다.
+
+#### 27. action
+
+state를 바꾸는 행동이다.
+
+#### 28. Dispatch
+
+스토어의 내장함수 중 하나로, action을 실행시킨다.
+
+#### 29. Reducer
+
+와, 전달 받은 action의을 참고하여 state를 어떻게 바꿀지 정의한다.
+
+#### 30. store
+
+state, action, reducer가 합쳐진 개념으로 그 외 몇가지 내장함수들이 들어있다.
