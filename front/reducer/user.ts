@@ -1,5 +1,5 @@
 const dummyUser = {
-  nickname: "danah",
+  nickname: "sweetmilky",
   Post: [],
   Followings: [],
   Followers: []

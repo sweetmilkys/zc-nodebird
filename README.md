@@ -30,8 +30,8 @@
 - [x] [#2-6 프로필 화면 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/6b8cd715164f9840ba5d87397eebc6ee583e25e1)
 - [x] [#2-7 컴포넌트 분리하기](https://github.com/sweetmilkys/zc-nodebird/commit/c9b53f21d5aa1b04bf205fd3b858adc86e6ef80d)
 - [x] [#3-1 redux 주요 개념 소개](https://github.com/sweetmilkys/zc-nodebird/commit/a331e6ed72285334a42bfee9175017ae50aa8818)
-- [x] [#3-2 첫 리듀서 만들기]
-- [ ] [#3-3 불변성과 리듀서 여러 개 합치기]
+- [x] [#3-2 첫 리듀서 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/26d5c9abcefd02fe26c3dd89f1161f9ea5e9c870)
+- [x] [#3-3 불변성과 리듀서 여러 개 합치기]()
 - [ ] [#3-4 redux react 연결하기]
 - [ ] [#3-5 redux devtools 사용하기]
 - [ ] [#3-6 react-redux 훅 사용하기]
@@ -329,3 +329,8 @@ state를 바꾸는 행동이다.
 #### 30. store
 
 state, action, reducer가 합쳐진 개념으로 그 외 몇가지 내장함수들이 들어있다.
+
+#### 31. Immutable.js 혹은 Immer.js
+
+불변성을 유지해줘야 하는 객체의 값을 더 쉽게 업데이트 할 수 있게 해준다.
+[Redux (4) Immutable.js 혹은 Immer.js 를 사용한 더 쉬운 불변성 관리](https://velog.io/@velopert/20180908-1909-%EC%9E%91%EC%84%B1%EB%90%A8-etjltaigd1#4-2.-immer-%EB%A1%9C-%EB%B6%88%EB%B3%80%EC%84%B1-%EC%9C%A0%EC%A7%80%ED%95%98%EA%B8%B0)
