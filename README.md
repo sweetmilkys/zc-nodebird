@@ -29,8 +29,8 @@
 - [x] [#2-5 메인 화면 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/ada1694bc4633828515deed2b15479354b9cfb5b)
 - [x] [#2-6 프로필 화면 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/6b8cd715164f9840ba5d87397eebc6ee583e25e1)
 - [x] [#2-7 컴포넌트 분리하기](https://github.com/sweetmilkys/zc-nodebird/commit/c9b53f21d5aa1b04bf205fd3b858adc86e6ef80d)
-- [x] [#3-1 redux 주요 개념 소개]
-- [ ] [#3-2 첫 리듀서 만들기]
+- [x] [#3-1 redux 주요 개념 소개](https://github.com/sweetmilkys/zc-nodebird/commit/a331e6ed72285334a42bfee9175017ae50aa8818)
+- [x] [#3-2 첫 리듀서 만들기]
 - [ ] [#3-3 불변성과 리듀서 여러 개 합치기]
 - [ ] [#3-4 redux react 연결하기]
 - [ ] [#3-5 redux devtools 사용하기]
@@ -154,6 +154,7 @@
 - webpack
 - eslint(babel-eslint, eslint-plugin-import, eslint-plugin-react eslint-plugin-react-hooks)
 - antd
+- redux(react-redux)
 
 </br>
 
