@@ -149,7 +149,7 @@
 - typescript
 - react
 - react-dom
-- next
+- next(next-redux-wrapper)
 - nodemon
 - webpack
 - eslint(babel-eslint, eslint-plugin-import, eslint-plugin-react eslint-plugin-react-hooks)

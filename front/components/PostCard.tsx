@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Icon, Button, Avatar } from "antd";
 
-interface IPostCard {
+interface Props {
   post: {
     user: { id: number; nickName: string };
     content: string;
@@ -10,7 +10,7 @@ interface IPostCard {
   };
 }
 
-const PostCard: React.FC<IPostCard> = ({ post }) => {
+const PostCard: React.FC<Props> = ({ post }) => {
   return (
     <Card
       key={+post.createdAt}

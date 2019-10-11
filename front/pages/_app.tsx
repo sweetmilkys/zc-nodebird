@@ -1,14 +1,20 @@
 import React from "react";
 import Head from "next/head";
-import AppLayout from "../components/AppLayout";
+import { Provider } from "react-redux";
+import { createStore, Store } from "redux";
+import withRedux from "next-redux-wrapper";
 
-interface INodeBird {
+import AppLayout from "../components/AppLayout";
+import reducer from "../reducers";
+
+interface Props {
   Component: React.ElementType;
+  store: Store;
 }
 
-const NodeBird: React.FC<INodeBird> = ({ Component }) => {
+const NodeBird: React.FC<Props> = ({ Component, store }) => {
   return (
-    <>
+    <Provider store={store}>
       <Head>
         <title>NodeBird</title>
         <link
@@ -19,8 +25,11 @@ const NodeBird: React.FC<INodeBird> = ({ Component }) => {
       <AppLayout>
         <Component />
       </AppLayout>
-    </>
+    </Provider>
   );
 };
 
-export default NodeBird;
+export default withRedux((initialState, options) => {
+  const store = createStore(reducer, initialState);
+  return store;
+})(NodeBird);

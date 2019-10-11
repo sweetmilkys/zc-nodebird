@@ -13,11 +13,11 @@ const dummy = {
   isLoggedIn: false
 };
 
-interface AppLayoutProps {
+interface Props {
   children: ReactNode;
 }
 
-const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
+const AppLayout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Menu mode="horizontal">
