@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { Provider } from "react-redux";
-import { createStore, Store } from "redux";
+import { createStore, Store, compose, applyMiddleware } from "redux";
 import withRedux from "next-redux-wrapper";
 
 import AppLayout from "../components/AppLayout";
@@ -30,6 +30,14 @@ const NodeBird: React.FC<Props> = ({ Component, store }) => {
 };
 
 export default withRedux((initialState, options) => {
-  const store = createStore(reducer, initialState);
+  const middlewares: never[] = [];
+  const enhancer = compose(
+    applyMiddleware(...middlewares),
+    !options.isServer &&
+      typeof (window as any).__REDUX_DEVTOOLS_EXTENSION__ !== "undefined"
+      ? (window as any).__REDUX_DEVTOOLS_EXTENSION__()
+      : (f: any) => f
+  );
+  const store = createStore(reducer, initialState, enhancer);
   return store;
 })(NodeBird);

@@ -31,9 +31,9 @@
 - [x] [#2-7 컴포넌트 분리하기](https://github.com/sweetmilkys/zc-nodebird/commit/c9b53f21d5aa1b04bf205fd3b858adc86e6ef80d)
 - [x] [#3-1 redux 주요 개념 소개](https://github.com/sweetmilkys/zc-nodebird/commit/a331e6ed72285334a42bfee9175017ae50aa8818)
 - [x] [#3-2 첫 리듀서 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/26d5c9abcefd02fe26c3dd89f1161f9ea5e9c870)
-- [x] [#3-3 불변성과 리듀서 여러 개 합치기]()
-- [ ] [#3-4 redux react 연결하기]
-- [ ] [#3-5 redux devtools 사용하기]
+- [x] [#3-3 불변성과 리듀서 여러 개 합치기](https://github.com/sweetmilkys/zc-nodebird/commit/6ac54fb0152c380e91665a656b47af9a231f73b1)
+- [x] [#3-4 redux react 연결하기](https://github.com/sweetmilkys/zc-nodebird/commit/fa6c3e7ddb1da3da8ab9d7fe2f1856bd144dda57)
+- [x] [#3-5 redux devtools 사용하기]
 - [ ] [#3-6 react-redux 훅 사용하기]
 - [ ] [#3-7 react-redux connect]
 - [ ] [#3-8 dummy 데이터로 리덕스 사용하기]
@@ -312,7 +312,7 @@ dependency에 state를 넣어줘야 이벤트 리스너들이 재 생성이 된�
 #### 26. Redux state와 React state
 
 React의 state를 바꾸는 작업이 까다로워 React의 state와 같이 사용한다.
-React의 사용이유 안정성과 state 통제가 용이 하기때문에 사용한다.
+React state 사용이유 안정성과 state 통제가 용이 하기때문에 사용한다.
 
 #### 27. action
 
@@ -324,7 +324,7 @@ state를 바꾸는 행동이다.
 
 #### 29. Reducer
 
-와, 전달 받은 action의을 참고하여 state를 어떻게 바꿀지 정의한다.
+전달 받은 action을 참고하여 state를 어떻게 바꿀지 정의한다.
 
 #### 30. store
 
@@ -334,3 +334,10 @@ state, action, reducer가 합쳐진 개념으로 그 외 몇가지 내장함수�
 
 불변성을 유지해줘야 하는 객체의 값을 더 쉽게 업데이트 할 수 있게 해준다.
 [Redux (4) Immutable.js 혹은 Immer.js 를 사용한 더 쉬운 불변성 관리](https://velog.io/@velopert/20180908-1909-%EC%9E%91%EC%84%B1%EB%90%A8-etjltaigd1#4-2.-immer-%EB%A1%9C-%EB%B6%88%EB%B3%80%EC%84%B1-%EC%9C%A0%EC%A7%80%ED%95%98%EA%B8%B0)
+
+#### 32. 리덕스 미들웨어
+
+![](https://redux-advanced.vlpt.us/images/redux-middleware.png)
+액션이 디스패치(dispatch) 되어서 리듀서에서 이를 처리하기전에 사전에 지정된 작업들을 설정한다. 미들웨어를 액션과 리듀서 사이에서 동작한다.
+
+[리덕스 미들웨어와 외부 데이터 연동](https://redux-advanced.vlpt.us/)
