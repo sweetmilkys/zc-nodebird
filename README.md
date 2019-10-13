@@ -33,8 +33,8 @@
 - [x] [#3-2 첫 리듀서 만들기](https://github.com/sweetmilkys/zc-nodebird/commit/26d5c9abcefd02fe26c3dd89f1161f9ea5e9c870)
 - [x] [#3-3 불변성과 리듀서 여러 개 합치기](https://github.com/sweetmilkys/zc-nodebird/commit/6ac54fb0152c380e91665a656b47af9a231f73b1)
 - [x] [#3-4 redux react 연결하기](https://github.com/sweetmilkys/zc-nodebird/commit/fa6c3e7ddb1da3da8ab9d7fe2f1856bd144dda57)
-- [x] [#3-5 redux devtools 사용하기]
-- [ ] [#3-6 react-redux 훅 사용하기]
+- [x] [#3-5 redux devtools 사용하기](https://github.com/sweetmilkys/zc-nodebird/commit/8e80be72fe5253c6d93d94fd9ac0931dbc4fd91a)
+- [x] [#3-6 react-redux 훅 사용하기]
 - [ ] [#3-7 react-redux connect]
 - [ ] [#3-8 dummy 데이터로 리덕스 사용하기]
 - [ ] [#3-9 리액트 state와 리덕스 state]
@@ -154,7 +154,8 @@
 - webpack
 - eslint(babel-eslint, eslint-plugin-import, eslint-plugin-react eslint-plugin-react-hooks)
 - antd
-- redux(react-redux)
+- redux
+- react-redux
 
 </br>
 
@@ -341,3 +342,11 @@ state, action, reducer가 합쳐진 개념으로 그 외 몇가지 내장함수�
 액션이 디스패치(dispatch) 되어서 리듀서에서 이를 처리하기전에 사전에 지정된 작업들을 설정한다. 미들웨어를 액션과 리듀서 사이에서 동작한다.
 
 [리덕스 미들웨어와 외부 데이터 연동](https://redux-advanced.vlpt.us/)
+
+#### 33. 리덕스 state 가져오기
+
+useSelector를 이용해서 state의 데이터를 가져올 수 있다.
+
+#### 34. 리덕스 state 변경하기
+
+useDispatch를 이용해서 action을 지정하면 store의 state를 변경할 수 있다.

@@ -7,9 +7,9 @@ const dummyUser = {
 
 export interface UserData {
   nickName: string;
-  Post: Array<object>;
-  Followings: Array<string>;
-  Followers: Array<string>;
+  Post?: Array<object>;
+  Followings?: Array<string>;
+  Followers?: Array<string>;
 }
 
 export interface UserState {
@@ -43,9 +43,7 @@ export const login = (data: UserData) => {
   };
 };
 
-export const logout = () => {
-  return { type: LOG_OUT };
-};
+export const logout = { type: LOG_OUT };
 
 export const userActions = { login, logout };
 
