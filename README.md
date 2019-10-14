@@ -34,8 +34,8 @@
 - [x] [#3-3 불변성과 리듀서 여러 개 합치기](https://github.com/sweetmilkys/zc-nodebird/commit/6ac54fb0152c380e91665a656b47af9a231f73b1)
 - [x] [#3-4 redux react 연결하기](https://github.com/sweetmilkys/zc-nodebird/commit/fa6c3e7ddb1da3da8ab9d7fe2f1856bd144dda57)
 - [x] [#3-5 redux devtools 사용하기](https://github.com/sweetmilkys/zc-nodebird/commit/8e80be72fe5253c6d93d94fd9ac0931dbc4fd91a)
-- [x] [#3-6 react-redux 훅 사용하기]
-- [ ] [#3-7 react-redux connect]
+- [x] [#3-6 react-redux 훅 사용하기](https://github.com/sweetmilkys/zc-nodebird/commit/d46821af47cb52beb154e941966b595791ea492a)
+- [x] [#3-7 react-redux connect]
 - [ ] [#3-8 dummy 데이터로 리덕스 사용하기]
 - [ ] [#3-9 리액트 state와 리덕스 state]
 - [ ] [#4-1 리덕스 사가의 필요성과 맛보기]
@@ -350,3 +350,7 @@ useSelector를 이용해서 state의 데이터를 가져올 수 있다.
 #### 34. 리덕스 state 변경하기
 
 useDispatch를 이용해서 action을 지정하면 store의 state를 변경할 수 있다.
+
+#### redux-connect
+
+기존에 redux hooks가 생기기전에 props에 state를 전달해 주던 방법이다. 클래스형 컴포넌트에서 많이 사용한다.

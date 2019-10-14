@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
+import { connect } from "react-redux";
 
 import PostForm from "../components/PostForm";
 import PostCard from "../components/PostCard";
-import { login, logout } from "../reducers/user";
+// import { login, logout } from "../reducers/user";
+import { login, logout, UserData } from "../reducers/user";
 import { StoreState } from "../reducers";
 
 const dummy = {
@@ -22,14 +24,25 @@ const dummy = {
   ]
 };
 
-const Home = () => {
-  const dispatch = useDispatch();
-  const { isLoggedIn, user } = useSelector((state: StoreState) => state.user);
-
+const Home = ({
+  user,
+  login,
+  logout
+}: {
+  user: any;
+  login: (arg0: UserData) => void;
+  logout: () => void;
+}) => {
+  //const dispatch = useDispatch();
+  //const { isLoggedIn, user } = useSelector((state: StoreState) => state.user);
+  //console.log(user.user);
   useEffect(() => {
-    dispatch(login({ nickName: "sweetmilky" }));
-    dispatch(logout);
-    dispatch(login({ nickName: "sweetmilky" }));
+    //dispatch(login({ nickName: "sweetmilky" }));
+    login({ nickName: "sweetmilky" });
+    //dispatch(logout);
+    logout();
+    //dispatch(login({ nickName: "sweetmilky" }));
+    login({ nickName: "sweetmilky" });
   }, []);
 
   return (
@@ -47,4 +60,23 @@ const Home = () => {
   );
 };
 
-export default Home;
+function mapStateToProps(state: StoreState) {
+  return {
+    user: state.user.user
+  };
+}
+
+function mapDispatchToProps(dispatch: {
+  (arg0: { type: string; data: UserData }): void;
+  (arg0: { type: string }): void;
+}) {
+  return {
+    login: (data: UserData) => dispatch(login(data)),
+    logout: () => dispatch(logout)
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Home);
