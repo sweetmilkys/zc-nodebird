@@ -21,7 +21,7 @@
   "dependencies": {
     "antd": "^3.23.5",
     "dotenv": "^8.1.0",
-    "next": "^9.0.7",
+    "next": "^9.3.2",
     "next-redux-wrapper": "^4.0.1",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
